@@ -4,7 +4,7 @@
   border-radius: 30px;
   max-width: 125px;
   height: 31px;
-  // margin-left: 14px;
+
   padding-inline-start: 48px;
 
   @media screen and (min-width: $tablet) {
@@ -12,7 +12,7 @@
     opacity: 1;
     display: inline-block;
     transition: none;
-    // margin-left: 48px;
+
   }
 
   @media screen and (min-width: $desktop) {

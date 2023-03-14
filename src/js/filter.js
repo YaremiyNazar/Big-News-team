@@ -25,7 +25,6 @@ function handleScreenWidthCange(e) {
 
 function handleSelectClick(e) {
   const listEl = document.querySelector('.filter-list');
-  // const mainBtn = document.querySelector('[data-value="categories"]')
   if (!e.target.dataset.value) {
     return;
   }
@@ -43,7 +42,6 @@ function handleSelectClick(e) {
       return;
     }
     listEl.classList.add('visually-hidden');
-    // mainBtn.textContent = e.target.textContent
     createMarkup(data);
     addAlreadyReadMarkup();
   });
@@ -54,7 +52,7 @@ async function getСategoryNameFetch(categoryName) {
     const response = await axios.get(
       `https://api.nytimes.com/svc/news/v3/content/inyt/${categoryName}.json?api-key=RX66xbpKTOQTP8uW8ejKF6pod0BTlz7b&fq=field-name:("title", "section", "url", "published_date", "multimedia")`
     );
-    // console.log(response);
+
     return response.data.results;
   } catch (error) {
     console.log(error);

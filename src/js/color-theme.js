@@ -21,9 +21,7 @@ const svgX = document.querySelector('.x__theme');
 
 const burger = document.querySelector('.burger-menu__wrapper');
 
-// const btns = document.querySelector('.filter-btn');
-// const others = document.querySelector('.filter-dropdowv-btn');
-// console.log(btns,others);
+
 
 function colorTheme(e){
     if (e.type==='click')  {
@@ -70,22 +68,6 @@ function colorTheme(e){
 
     svgX.classList.toggle('svg__light__theme');
     svgX.classList.toggle('svg__dark__theme');// X esc
-
-    // btns.classList.toggle('');
-    // btns.classList.toggle('');
-
-    // others.classList.toggle('');
-    // others.classList.toggle('');
-
-
-    // console.log(themeKey);
-    // if(themeKey){
-    //     themeKey=false;
-    // }else{
-    //     themeKey=true;
-    // }
-
-
 
 }
 

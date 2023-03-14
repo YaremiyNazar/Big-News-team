@@ -1,9 +1,6 @@
 const searchInput = document.querySelector('.nav__input');
 const searchLupa = document.querySelector('.lupa');
 const width = document.querySelector('input');
-// width.offsetWidth
-// console.log(searchInput.offsetWidth)
-// console.log(window.innerWidth)
 function addClass() {
   if (searchInput.offsetWidth <= width.offsetWidth) {
     searchInput.classList.add('active-input');
